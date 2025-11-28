@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>macgical world</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="pictures/tree.jpg">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+        <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
+        <script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
+    </head>
+    <body>
+        <div class="leftCol">
+            <a href="index.html">macgical</a>
+            <div class="section">music</div>
+            <a href="playback.html">playback</a>
+            <a href="pianoWorks.html">piano works</a>
+            <a href="boxCarlevas.html">box carlevas</a>
+            <a class="active" href="listeningRoom.html">listening room</a>
+            <!-- divider here -->
+            <div class="section">creative coding</div>
+            <a href="p5Sketches.html">p5js sketches</a>
+            <!-- <a href="pythonFinal.html">live coding</a> -->
+            <a href="drawSynth.html">draw synth</a>
+            <div class="section">visual work</div>
+            <a href="gallery.html">gallery</a>
+            <div class="section">writing</div>
+            <!-- <a href="masterSlave.html">jazz explained</a> -->
+            <a href="poem.html">poem i wrote</a>
+             <div class="contactCol">
+                contact<br> 
+                mac@↴<br>
+                macgical.net<br>
+                instagram:<br>
+                @macgical<br>
+                @macsanmiguel
+             </div>            
+        </div>
+        <div class="rightCol">
+                <div id="instructionPopup">
+                    <button id="closePopup">✕</button>
+                    <div id="instructionContent">
+                        the <a id="webampLink" target="_blank" href="https://github.com/captbaritone/webamp">↗webamp</a> media player has four modules.<br>
+                        all of the modules can be individually moved around by clicking and dragging at the top<br>
+                        the top module has playback controls, second is an equalizer, third is the playlist, and on the bottom is the visualizer<br>
+                        detach the visualizer and resize by dragging the bottom right corner for a better view!<br>
+                    </div>
+                </div>
+            <div id="winamp-container" style="height: 100vh;"></div>
+        </div>
+        <script src="Webamp.js"></script>
+        <script>
+            document.getElementById("closePopup").addEventListener("click", function () {
+            document.getElementById("instructionPopup").style.display = "none";
+            });
+        </script>
+    </body>
+</html>
