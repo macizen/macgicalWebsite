@@ -177,9 +177,9 @@ a:hover {
 }
 .gallery img {
     width: 45%;
-    height: fit-content;
     margin-top: auto;
     padding: 1em;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -220,7 +220,7 @@ a:hover {
 }
 .boxGallery img {
     width: 45%;
-    height: fit-content;
+    object-fit: contain;
     margin-top: auto;
     padding: 1em;
 }
