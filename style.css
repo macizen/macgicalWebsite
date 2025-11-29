@@ -52,6 +52,22 @@ a:hover {
     flex-direction: column;
     min-height: 0;
 }
+
+.rightColBio {
+    flex: 4;
+    background-image: url(pictures/mainBackground.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 300;
+    padding: 2em;
+    padding-bottom: 0;
+    line-height: 1.6em;
+    overflow-y: scroll;
+    display:flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
 @media (max-width: 768px) {
     .leftCol {
         flex: 2;     
